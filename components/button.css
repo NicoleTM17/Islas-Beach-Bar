@@ -1,0 +1,21 @@
+
+.bar-status{
+  position: absolute;
+  background-color: white;
+  padding: 5px 15px;
+  width: 50px;
+  margin-left: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  color: green;
+  z-index: 1;
+  bottom: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.fa-circle{
+  font-size: 8px;
+  padding: 4px;
+  margin-left: -10px;
+}

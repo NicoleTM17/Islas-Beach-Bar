@@ -1,0 +1,9 @@
+.bar-logo{
+  position:absolute;
+  max-width: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
+  z-index: 1;
+  bottom: -20px;
+  right: 3px;
+}
