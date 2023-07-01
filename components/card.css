@@ -21,3 +21,7 @@
   margin-left: 5px;
   color: #CDA97C;
 }
+
+.menu-card .hidden {
+  display: none;
+}
