@@ -24,6 +24,10 @@
   font-family: 'PT Serif', serif;
 }
 
+.info{
+  cursor: pointer;
+}
+
 .menu{
   margin-left: 10px;
 }
@@ -43,7 +47,7 @@
   padding: 10px 25px;
   background-color: #353336;
   /* color: rgba(250, 250, 250, 0.6); */
-  width: 90%;
+  width: 95%;
   font-style: italic;
   cursor: pointer;
 }
@@ -104,4 +108,11 @@ input, select, textarea{
 .cat-subtitle{
   color: #CDA97C;
   margin-left: 2px;
+}
+
+.menu-footer{
+  text-align: center;
+  color: white;
+  opacity: 0.5;
+  font-size: 14px;
 }
