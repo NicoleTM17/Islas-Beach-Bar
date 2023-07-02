@@ -4,7 +4,7 @@ export default class extends Controller {
   static targets = ["menuCard"];
 
   connect() {
-    // console.log("Hello, you are inside the search_bar controller!");
+    console.log("Hello, you are inside the search_bar controller!");
   }
 
   search(event) {

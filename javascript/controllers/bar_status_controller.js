@@ -3,7 +3,7 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   static targets = ["text", "dot"];
   connect() {
-    console.log("Connected to bar_status_controller!");
+    // console.log("Connected to bar_status_controller!");
     this.updateStatus();
   }
 
