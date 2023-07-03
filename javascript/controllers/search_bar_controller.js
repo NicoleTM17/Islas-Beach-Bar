@@ -1,30 +1,35 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = ["menuCard"];
+  static targets = ["menuCard", "search"];
 
   connect() {
-    console.log("Hello, you are inside the search_bar controller!");
+    // console.log("Hello, you are inside the search_bar controller!");
+    console.log(this.menuCardTargets);
   }
 
   search(event) {
-    console.log(event);
-    const searchInput = event.target.value.toLowerCase(); // assigns the value of the text in the input field
+    // console.log(event);
+    const searchInput = this.searchTarget.value.toLowerCase(); // assigns the value of the text in the input field
+    // console.log(searchInput);
 
     this.menuCardTargets.forEach((menuCard) => {
-      const itemName = menuCard.querySelector(".item-name").textContent.toLowerCase();
+      const itemName = menuCard.querySelector(".item-name").innerText.toLowerCase();
+      console.log(itemName);
 
       if (itemName.includes(searchInput)) { // if the name of the menu item is the same as whatever is inputted in the search field
         menuCard.classList.remove("hidden"); // display the menu card of the menu item
+        // console.log("match");
       } else {
         menuCard.classList.add("hidden"); // hide the menu card of all the items that do not match the input
+        // console.log("no match");
       }
     });
   }
 }
 
 
-
+// event.target.value.toLowerCase();
 
 // search(event) {
 //   // console.log(event);

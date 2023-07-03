@@ -25,7 +25,11 @@
   <div class="container">
     <div class="bar-banner">
       <img class="bar-img" src="https://patinahotels.com/assets/img/site_images/maldives/maldives-dining-fari-beach-club.jpg" alt="beachbar">
+
+      <!-- bar info here -->
       <div class="info"><i class="fa-solid fa-info"></i></div>
+
+
       <!-- open button here -->
       <div class="bar-status"
         data-controller="bar-status">
@@ -37,13 +41,13 @@
       <img class="bar-logo" src="images/Isla's Beach bar logo big.png" alt="Isla's logo">
     </div>
 
-    <div class="menu">
+    <div class="menu" data-controller="search-bar">
       <div class="table"><span>Table #</span><span class="table-num">22</span></div>
       <h1 class="bar-title">Isla's Beach Bar</h1>
       <!-- added a search bar here -->
       <div class="searchbar">
         <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="search" id="search" placeholder="Search menu" data-controller="search-bar" data-action="input->search-bar#search">
+        <input type="search" id="search" placeholder="Search menu" data-action="input->search-bar#search" data-search-bar-target="search">
       </div>
       <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
       <!-- food content will go here -->
