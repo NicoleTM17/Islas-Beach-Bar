@@ -41,3 +41,8 @@
   /* opacity: 0.5; */
   visibility: hidden;
 }
+
+.search-results.hidden{
+  visibility: hidden;
+  /* display: none; */
+}

@@ -35,12 +35,15 @@
 
 .menu-content{
   font-family: 'Quicksand', sans-serif;
+  margin-top: -20px;
   /* margin-top: 30px; */
 }
 
-/* .menu-content .search-results{
-  margin-top: 30px;
-} */
+.search-results{
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+}
 
 .bar-banner{
   position: relative;
