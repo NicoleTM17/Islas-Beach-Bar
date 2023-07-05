@@ -41,7 +41,7 @@
       <img class="bar-logo" src="images/Isla's Beach bar logo big.png" alt="Isla's logo">
     </div>
 
-    <div class="menu" data-controller="search-bar">
+    <div class="menu" data-controller="search-bar" data-action="blur->search-bar#clear">
       <div class="table"><span>Table #</span><span class="table-num">22</span></div>
       <h1 class="bar-title">Isla's Beach Bar</h1>
       <!-- added a search bar here -->
@@ -53,10 +53,12 @@
       <!-- food content will go here -->
 
       <div class="menu-content">
-
+        <!-- <p class="search-results"></p> -->
         <div id="food">
-          <h3 class="cat-title">Foods</h3>
-          <h3 class="cat-subtitle">Crispy Salads</h3>
+          <span class="menu-title" data-search-bar-target="menuTitle">
+            <h3 class="cat-title">Foods</h3>
+            <h3 class="cat-subtitle">Crispy Salads</h3>
+          </span>
           <!-- food cards here -->
           <div class="menu-card" data-search-bar-target="menuCard">
             <h4 class="item-name">Greek Village Salad with Feta</h4>
@@ -68,7 +70,10 @@
             <p class="item-details">Beluga lentils, tomatoes, baked beetroot and goat cheese on a bed of salad</p>
             <p class="item-price">£14.00</p>
           </div>
-          <h3 class="cat-subtitle">Seafood</h3>
+
+          <span class="menu-title" data-search-bar-target="menuTitle">
+            <h3 class="cat-subtitle">Seafood</h3>
+          </span>
           <div class="menu-card" data-search-bar-target="menuCard">
             <h4 class="item-name">Crispy Baby Calamari</h4>
             <p class="item-details">Served with Greek pita, basil pesto and smoked aubergine</p>
@@ -84,8 +89,10 @@
 
 
         <div id="drink">
-          <h3 class="cat-title">Drinks</h3>
-          <h3 class="cat-subtitle">Cocktails & Mocktails</h3>
+          <span class="menu-title" data-search-bar-target="menuTitle">
+            <h3 class="cat-title">Drinks</h3>
+            <h3 class="cat-subtitle">Cocktails & Mocktails</h3>
+          </span>
           <!-- drink cards here -->
           <div class="menu-card" data-search-bar-target="menuCard">
             <h4 class="item-name">Strawberry Daiquiri</h4>
@@ -97,8 +104,11 @@
             <p class="item-details">Peach Schnapps, Vodka and Cranberry Juice</p>
             <p class="item-price">£8.50</p>
           </div>
-          <h3 class="cat-subtitle">Wines</h3>
-          <div class="menu-card">
+
+          <span class="menu-title" data-search-bar-target="menuTitle">
+            <h3 class="cat-subtitle">Wines</h3>
+          </span>
+          <div class="menu-card" data-search-bar-target="menuCard">
             <h4 class="item-name">Cabernet Sauvignon red wine</h4>
             <p class="item-details">Black Cherry, Black Currant, Baking Spices, and Cedar </p>
             <p class="item-price">£9.00</p>
@@ -112,8 +122,10 @@
 
 
         <div id="dessert">
-          <h3 class="cat-title">Desserts</h3>
-          <h3 class="cat-subtitle">Creamy desserts</h3>
+          <span class="menu-title" data-search-bar-target="menuTitle">
+            <h3 class="cat-title">Desserts</h3>
+            <h3 class="cat-subtitle">Creamy desserts</h3>
+          </span>
           <!-- dessert cards here -->
           <div class="menu-card" data-search-bar-target="menuCard">
             <h4 class="item-name">Chocolate Mousse with Salted Caramel and Mochi</h4>

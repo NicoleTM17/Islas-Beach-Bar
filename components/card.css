@@ -22,6 +22,22 @@
   color: #CDA97C;
 }
 
-.menu-card .hidden {
+/* .menu-card .hidden {
   display: none;
+  visibility: hidden;
+} */
+
+.menu-card {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.menu-card.hidden {
+  /* opacity: 0.5; */
+  visibility: hidden;
+}
+
+.menu-title.hidden {
+  /* opacity: 0.5; */
+  visibility: hidden;
 }
