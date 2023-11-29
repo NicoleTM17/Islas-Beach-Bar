@@ -4,23 +4,25 @@
 @import url(components/popup.css);
 
 body{
-  /* background-image: url(https://images.unsplash.com/photo-1473116763249-2faaef81ccda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1496&q=80); */
-  /* background-size: cover; */
   background-color: rgba(205, 169, 124, 0.7);
 }
 
 
 .container{
-  /* border: 1px solid red; */
   display: block;
   margin: 0 auto;
   max-width: 600px;
   background-color: #353336;
+  border-radius: 5px;
+  border: 0;
 }
 
 .bar-img{
   max-width: 100%;
   opacity: 0.9;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 0;
 }
 
 .bar-title{
@@ -58,7 +60,6 @@ body{
   border-radius: 6px;
   padding: 10px 25px;
   background-color: #353336;
-  /* color: rgba(250, 250, 250, 0.6); */
   width: 95%;
   font-style: italic;
   cursor: pointer;
@@ -108,9 +109,7 @@ input, select, textarea{
 
 .table-num{
   font-size: 25px;
-  /* margin-bottom: 15px; */
   vertical-align: sub;
-  /* font-size:smaller; */
 }
 
 .cat-title{
